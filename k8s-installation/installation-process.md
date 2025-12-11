@@ -1,5 +1,4 @@
-Here’s a clean and well-structured **README.md** version of your Kubernetes setup guide. It includes proper markdown formatting, headings, and syntax highlighting for readability.  
-
+🚀 Kubernetes Setup on Ubuntu
 ***
 
 ```markdown
