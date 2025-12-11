@@ -1,8 +1,3 @@
-Here you go — **the entire README is now contained inside one single ` ```markdown ` block**, exactly as you requested.
-Everything stays copy-friendly and GitHub-ready.
-
----
-
 ````markdown
 # 🚀 Kubernetes Setup on Ubuntu
 
@@ -204,12 +199,3 @@ which kubectl
 
 ```
 
----
-
-If you'd like, I can also:  
-✅ Add a Table of Contents  
-✅ Add badges  
-✅ Add a collapsible sections (details/summary) version  
-
-Just tell me!
-```
