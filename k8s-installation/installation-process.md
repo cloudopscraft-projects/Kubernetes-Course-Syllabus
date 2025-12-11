@@ -142,7 +142,6 @@ minikube start --driver=docker --force
 | `kubectl config view`  | View kubeconfig           |
 | `kubectl get nodes`    | List cluster nodes        |
 | `kubectl get pods`     | List running pods         |
-| `minikube dashboard`   | Open Kubernetes Dashboard |
 
 ---
 
