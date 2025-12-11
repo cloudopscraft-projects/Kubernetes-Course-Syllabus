@@ -1,4 +1,4 @@
-Here’s a clean and well-structured **README.md** version of your Kubernetes setup guide. It includes proper markdown formatting, headings, and syntax highlighting for readability.  
+🚀 Kubernetes Setup on Ubuntu
 
 ***
 
@@ -177,16 +177,5 @@ which kubectl
 ```
 > Both commands should return **no output** if uninstalled successfully.
 
----
 
-## 🧩 Notes
-- Ensure **Virtualization** is enabled in BIOS for Minikube.  
-- If using **VM-based drivers**, consider installing `virtualbox` or `qemu`.  
-- Make sure your user has access to Docker without `sudo` before running Minikube.
 
----
-```
-
-***
-
-Would you like me to include a **table of contents** with links for quick navigation inside the README?
