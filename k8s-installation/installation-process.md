@@ -9,22 +9,22 @@ This guide walks you through installing **Docker**, **kubectl**, and **Minikube*
 **Update package lists**
 sudo apt update
 
-text
+
 
 **Install Docker Engine**
 sudo apt install docker.io -y
 
-text
+
 
 **Start Docker service**
 sudo systemctl start docker
 
-text
+
 
 **Enable Docker to start at boot**
 sudo systemctl enable docker
 
-text
+
 
 ---
 
@@ -33,19 +33,19 @@ text
 **Create docker group (if it doesn’t exist)**
 sudo groupadd docker
 
-text
+
 
 **Add your user to docker group**
 sudo usermod -aG docker $USER
 
-text
+
 
 **Apply group changes**
 - Option 1: Logout and login again  
 - Option 2:
 newgrp docker
 
-text
+
 
 ---
 
@@ -54,17 +54,17 @@ text
 **Install required packages**
 sudo apt install -y apt-transport-https ca-certificates curl
 
-text
+
 
 **Add Kubernetes GPG key**
 curl -s https://packages.cloud.google.com/apt/doc/apt-key.gpg | sudo apt-key add -
 
-text
+
 
 **Add Kubernetes APT repository**
 echo "deb https://apt.kubernetes.io/ kubernetes-xenial main" | sudo tee /etc/apt/sources.list.d/kubernetes.list
 
-text
+
 
 ---
 
@@ -73,12 +73,12 @@ text
 **Install kubectl**
 sudo snap install kubectl --classic
 
-text
+
 
 **Verify installation**
 kubectl version --client
 
-text
+
 
 ---
 
@@ -87,17 +87,17 @@ text
 **Download Minikube binary**
 curl -LO https://storage.googleapis.com/minikube/releases/latest/minikube-linux-amd64
 
-text
+
 
 **Install Minikube**
 sudo install minikube-linux-amd64 /usr/local/bin/minikube
 
-text
+
 
 **Verify installation**
 minikube version
 
-text
+
 
 ---
 
@@ -106,12 +106,12 @@ text
 **Start Minikube**
 minikube start --driver=docker
 
-text
+
 
 **If permission issues occur**
 minikube start --driver=docker --force
 
-text
+
 
 ---
 
@@ -134,25 +134,25 @@ text
 minikube stop
 minikube delete
 
-text
+
 
 ### 2. Remove Minikube Binary
 sudo rm -f /usr/local/bin/minikube
 
-text
+
 
 ### 3. Remove Minikube & kubectl Configs
 rm -rf ~/.minikube
 rm -rf ~/.kube
 
-text
+
 
 ---
 
 ## 🗑️ Remove kubectl (Snap)
 sudo snap remove kubectl
 
-text
+
 
 ---
 
@@ -161,7 +161,7 @@ sudo rm -f /etc/apt/sources.list.d/kubernetes.list
 sudo apt-key del "$(apt-key list | grep -B 1 'Google Cloud Packages' | head -n 1 | awk '{print $2}')"
 sudo apt update
 
-text
+
 
 ---
 
@@ -169,7 +169,7 @@ text
 which minikube
 which kubectl
 
-text
+
 > Both commands should return **no output** if uninstalled successfully.
 
 ---
